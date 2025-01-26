@@ -158,7 +158,7 @@ function showNextMessage() {
 }
 
 btnYes.addEventListener('click', () => {
-    window.location.href = 'start.html';
+    window.location.href = 'messenger.html';
 });
 
 btnNo.addEventListener('click', () => {
