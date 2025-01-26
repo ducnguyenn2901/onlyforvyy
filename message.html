@@ -62,6 +62,7 @@
         p {
             transition: opacity 0.3s ease;
             font-family: 'Times New Roman', 'Arial', sans-serif;
+            color: #901212;
         }
 
         .hide {
@@ -124,6 +125,7 @@
             margin: 10px;
             padding: 30px;
             border: 2px solid #f19fb3;
+            color: #901212;
             border-radius: 8px;
             background-color: #ffffff;
             text-align: center;
@@ -159,7 +161,8 @@
             margin-bottom: 30px;
             transform: perspective(500px) rotateY(10deg);
             transition: all 0.3s ease-in-out;
-        }
+            color: #901212;
+                }
 
         .message-text.show {
             transform: perspective(500px) rotateY(0deg);
@@ -187,16 +190,16 @@
 <body>
     <canvas id="c" width="948" height="586"></canvas>
 
-        <h1 id="messageTitle">Cậu có tin nhắn mới</h1>
+        <h1 id="messageTitle">Bạn có tin nhắn mới</h1>
         <p id="messageText">Xem ngay</p>
         <button id="btn">
             <img src="./letters.png" alt="Description">
         </button>
         <div class="message">Hiiiii</div>
-        <div class="message">Còn vài giờ nữa là hết năm rồi đó</div>
-        <div class="message">Hôm nay tớ có điều muốn nói với cậu</div>
+        <div class="message">Còn vài tiếng nữa là hết năm rồi đó</div>
+        <div class="message">Trước khi qua năm mới, tớ có điều muốn nói với cậu</div>
         <div class="message">Cậu cũng bíc là tớ thích cậu ròi đúng hong</div>
-        <div class="message">và tớ biết cậu chỉ coi tớ là một người bạn mà thoii</div>
+        <div class="message">và tớ bt cậu chỉ coi tớ là một người bạn mà thoii</div>
         <div class="message">Nhma cậu có thể cho tớ cơ hội làm người iu cậu đc hongg</div>
         <div class="message">Tớ muốn được cùng cậu chia sẻ và trải qua mọi điều trong cuộc sống hàng ngày</div>
         <div class="message">Tuy rằng tớ không được hoàn hảo nhưng tớ hứa sẽ cố gắng</div>
@@ -374,7 +377,7 @@ function showNextMessage() {
 }
 
 btnYes.addEventListener('click', () => {
-    window.location.href = 'start.html';
+    window.location.href = 'messenger.html';
 });
 
 btnNo.addEventListener('click', () => {

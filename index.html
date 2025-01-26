@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="istockphoto-1439973042-612x612.jpg" type="image/x-icon">
 	<title>onlyforvy</title>
-	<style>
-		body {
-			margin: 0;
-			overflow: hidden;
-			/* Ẩn cuộn */
-		}
-
-		/* Background hình ảnh toàn màn hình */
-		.background {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 100vh;
-			background-image: url('z6265992937479_22fdd3d461c6d9c25769b1981bbbf3ea.jpg');
-			background-size: cover;
-			background-position: center;
-			z-index: -1;
-			/* Đưa nền về sau */
-		}
-
-		/* Canvas pháo hoa */
-		canvas {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: block;
-			cursor: crosshair;
-		}
-
-		/* Ẩn âm thanh */
-		.audio-container {
-			visibility: hidden;
-		}
-	</style>
 </head>
+<style type="text/css">
+
+	body {
+		font-family: Arial, sans-serif;
+		overflow-x: hidden;
+		overflow-y: scroll;
+     	 margin: 0;
+     	 background: #000 url('z6265992937479_22fdd3d461c6d9c25769b1981bbbf3ea.jpg') no-repeat center center fixed;
+      background-size: cover;
+	}
+
+	canvas {
+		cursor: crosshair;
+		display: block;
+	}
+</style>
 
 <body>
-	<!-- Background -->
-	<div class="background"></div>
-
-	<!-- Canvas cho hiệu ứng pháo hoa -->
-	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
-
-	<!-- Âm thanh -->
-	<div class="audio-container">
+	<div style="visibility: hidden;">
 		<embed src="./fireworks.mp3" autostart="true" loop="true">
 	</div>
-
+	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 	<script>
-		// Hiệu ứng pháo hoa (giữ nguyên mã pháo hoa hiện tại)
+		setTimeout(function () {
+      window.location.href = "message.html";
+    }, 8000);
+	</script>
+	<script type="text/javascript">
 		window.requestAnimFrame = (function () {
 			return window.requestAnimationFrame ||
 				window.webkitRequestAnimationFrame ||
@@ -257,9 +232,8 @@
 		});
 
 		window.onload = loop;
-		setTimeout(() => {
-			window.location.href = 'message.html';
-		}, 8000);
+
+
 	</script>
 </body>
 
